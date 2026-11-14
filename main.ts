@@ -54,7 +54,7 @@ function validateAndDeliverLaunch(): void {
   writeFileSync(destinationPath, JSON.stringify(config, null, 2), 'utf-8');
 
   // Completed successfully without writing any non-essential stdout
-  return;
+  process.exit(0);
 }
 
 validateAndDeliverLaunch();
